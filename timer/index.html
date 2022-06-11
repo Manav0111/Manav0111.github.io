@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STOP WATCH</title>
+    <style>
+        html{
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(4, 4, 240, 0.588);
+
+        }
+
+        .container{
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.5);
+            width: 600px;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: lightskyblue;
+        }
+
+        #stopwatch{
+            margin: 0px;
+            background-color: darkblue;
+            color: white;
+            font-size: 64px;
+            border-radius: 5px;
+            padding: 5px;
+            padding-left: 30%;
+
+        }
+
+   
+
+        .buttons{
+            display:flex;
+            margin-top: 10px;
+            
+        }
+
+        .buttons button{
+            flex: 1;
+            margin: 0 5px;
+            margin: 2px;
+            border: none;
+            font-size: 22px;
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.5);
+            font-weight: bold;
+            color:blue;
+            background-color: yellow;
+            cursor: pointer; ;
+        }
+
+        .buttons button{
+            transition:all 0.15s ease-out ;
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="stopwatch">
+            00:00:00
+         </div>
+        <div class="buttons">
+            <button  onclick="startTimer()">START</button>
+            <button  onclick="stopTimer()">STOP</button>
+            <button  onclick="resetTimer()">RESET</button>
+
+        </div>
+    </div>
+
+<script src="index.js"></script>
+    
+</body>
+</html>
