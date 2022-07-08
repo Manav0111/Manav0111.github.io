@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav id="nav">
+        <img src="logo.svg" alt="" id="logo" />
+        <div class="nav-right">
+          <img src="Vector.svg" id="image1" />
+          <p id="para1">support@Programingpathshala.com</p>
+          <img src="Vector (1).svg" id="image2" />
+          <p id="para2">1800000000</p>
+        </div>
+      </nav>
+    </header>
+    <div class="main">
+      <div class="container-box">
+        <div class="img">
+          <img
+            src="Screenshot 2021-12-03 at 12.04 1.svg"
+            alt=""
+          />
+        </div>
+        <div class="form-section">
+          <h1 id="reg">Register for Event</h1>
+          <form action="/" id="myForm" class="form" name="Form" method="POST">
+            <label for="name">Name</label>
+            <input name="name" type="text" id="name" class="name" /><br />
+            <label for="email">Email</label>
+            <input name="email" type="email" id="email" class="email" /><br />
+            <label for="phno">Phone Number</label>
+            <input
+              name="mobile_number"
+              type="number"
+              id="phno"
+              class="phno"
+            /><br />
+            <label for="collname">Organisation/Collage Name</label>
+            <input
+              name="college"
+              type="text"
+              id="collname"
+              class="collname"
+            /><br />
+            <p class="warning hidden">* Please Fill All the Required Details</p>
+            <button id="btn" type="button" value="REGISTER">Register</button>
+          </form>
+        </div>
+      </div>
+      <div class="main-modal hidden">
+        <!-- <div class="modal"> -->
+        <div class="modal-box">
+          <img src="Frame.svg" alt="Frame" />
+          <h1>Congratulations!</h1>
+          <p>
+            You have been registered for the Event. Please keep checking your
+            email for the joining link.
+          </p>
+          <button>Start Your 7 Days Free Trial</button>
+          <p id="faded">Start Learning Now!</p>
+        </div>
+        <!-- </div> -->
+      </div>
+    </div>
+  </body>
+</html>
